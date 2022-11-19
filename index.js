@@ -74,7 +74,7 @@ function GreeAC(log, config) {
         .setProps({
             maxValue: 30,
             minValue: 16,
-            minStep: 1
+            minStep: 0.5
         })
         .on('set', this.setTargetTemperature.bind(this))
         .on('get', this.getTargetTemperature.bind(this));
@@ -84,7 +84,7 @@ function GreeAC(log, config) {
         .setProps({
             maxValue: 30,
             minValue: 16,
-            minStep: 1
+            minStep: 0.1
         })
         .on('get', this.getCurrentTemperature.bind(this));
 
